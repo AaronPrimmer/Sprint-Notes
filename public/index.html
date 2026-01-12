@@ -15,7 +15,20 @@
     </header>
     <main class="main-box">
       <div id="notesContainer" class="notes-container">
-        <h2>Notes Container</h2>
+        <ul id="notesList" class="notes-list">
+          <li class="note-item">
+            <div class="note-item-container">
+              <h3>Note Title</h3>
+              <p>
+                This is preview text for the note description. If this text goes
+                too long then it should wrap around.
+              </p>
+            </div>
+            <div class="note-item-button-container">
+              <button class="note-item-delete-button">🗑️</button>
+            </div>
+          </li>
+        </ul>
         <!-- Notes will be dynamically added here -->
       </div>
       <div id="notesView" class="notes-view">
