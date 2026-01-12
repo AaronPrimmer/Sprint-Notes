@@ -11,11 +11,14 @@
     "url": "git+https://github.com/AaronPrimmer/Sprint-Notes.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Aaron Primmer",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/AaronPrimmer/Sprint-Notes/issues"
   },
-  "homepage": "https://github.com/AaronPrimmer/Sprint-Notes#readme"
+  "homepage": "https://github.com/AaronPrimmer/Sprint-Notes#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
