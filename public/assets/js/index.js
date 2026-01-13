@@ -1,7 +1,7 @@
-
 const addNotesButton = document.getElementById("addNotesButton");
 const notesList = document.getElementById("notesList");
 let allNotes = [];
+let deleteClicked = false;
 
 function displayNotes(notesToDisplay){
     if(notesToDisplay){
@@ -14,12 +14,11 @@ function displayNotes(notesToDisplay){
             const textElement = document.createElement("p");
             const buttonDiv = document.createElement("div");
             const deleteButton = document.createElement("button");
-            const foundIndex = notesToDisplay.findIndex(item => item.title === note.title);
 
             titleElement.textContent = note.title;
             textElement.textContent = note.text;
             deleteButton.textContent = "Delete";
-            deleteButton.setAttribute("data-delete", foundIndex);
+            deleteButton.setAttribute("data-delete", note.id);
 
             listItem.classList.add("note-item");
             listDiv.classList.add("note-item-container");
@@ -33,6 +32,17 @@ function displayNotes(notesToDisplay){
             listItem.appendChild(buttonDiv);
 
             notesList.appendChild(listItem);
+
+            deleteButton.addEventListener("click", (event) => {
+                event.preventDefault();
+                event.stopPropagation();
+
+                if(!deleteClicked){
+                    deleteClicked = true;
+                    console.log("Clicked:", note.id);
+                }
+                deleteClicked = false;
+            });
         });
     }
 }

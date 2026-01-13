@@ -1,6 +1,7 @@
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
+const { addNote, uniqueID } = require("./helper/helper");
 const db = require("./db/db.json");
 
 const app = express();
@@ -29,9 +30,10 @@ app.post("/api/notes", (req, res) => {
     return res.status(400).json({ error: "Title and text are required" });
   }
 
-  const newNote = { title, text };
-  db.push(newNote);
-  fs.writeFileSync(path.join(__dirname, "db", "db.json"), JSON.stringify(db));
+  const newNote = { title, text, id: uniqueID() };
+  addNote(newNote);
+  //db.push(newNote);
+  //fs.writeFileSync(path.join(__dirname, "db", "db.json"), JSON.stringify(db));
   res.json({ success: true, note: newNote });
 });
 
