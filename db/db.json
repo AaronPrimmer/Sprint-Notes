@@ -1,1 +1,4 @@
-[{}]
+[
+  { "title": "Sample Item 1", "text": "This is the first sample item." },
+  { "title": "Sample Item 2", "text": "This is the second sample text." }
+]

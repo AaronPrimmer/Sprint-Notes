@@ -91,3 +91,7 @@ body {
 .note-item-delete-button:hover {
   background-color: hsl(1, 85%, 55%);
 }
+
+.note-item:hover {
+  background-color: hsl(0, 0%, 90%);
+}
