@@ -15,13 +15,27 @@
     </header>
     <main>
       <div class="form-box">
-        <form>
-          <label for="titleField">Title: </label>
-          <input id="titleField" name="titleField" type="text" placeholder="Enter Title..."/>
-          <label for="textField">Title: </label>
-          <input id="textField" name="textField" type="text" placeholder="Enter Title..."/>
-          <button id="cancelNoteButton" class="cancel-notes-button">Cancel</button>
-          <button type="submit" class="save-note-button" id="saveButton">Save</button>
+        <form id="saveNoteForm">
+          <label for="title">Title: </label>
+          <input
+            id="title"
+            name="title"
+            type="text"
+            placeholder="Enter Title..."
+          />
+          <label for="text">Description: </label>
+          <input
+            id="text"
+            name="text"
+            type="text"
+            placeholder="Enter Description..."
+          />
+          <button id="cancelNoteButton" class="cancel-notes-button">
+            Cancel
+          </button>
+          <button type="submit" class="save-note-button" id="saveButton">
+            Save
+          </button>
         </form>
       </div>
     </main>
