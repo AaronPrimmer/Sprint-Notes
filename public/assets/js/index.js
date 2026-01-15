@@ -65,7 +65,8 @@ function displayNotes(notesToDisplay) {
               return response.json();
             })
             .then((data) => {
-              getAllNotes(data);
+              notesView.replaceChildren();
+              getAllNotes();
             })
             .catch((error) => {
               console.error("Error:", error);
