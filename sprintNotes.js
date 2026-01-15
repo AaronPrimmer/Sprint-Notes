@@ -1,7 +1,7 @@
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
-const { addNote, uniqueID } = require("./helper/helper");
+const { addNote, uniqueID, deleteNote } = require("./helper/helper");
 const db = require("./db/db.json");
 
 const app = express();
@@ -35,6 +35,17 @@ app.post("/api/notes", (req, res) => {
   //db.push(newNote);
   //fs.writeFileSync(path.join(__dirname, "db", "db.json"), JSON.stringify(db));
   res.json({ success: true, note: newNote });
+});
+
+app.delete("/api/notes/:id", (req, res) => {
+  const noteId = req.params.id;
+  const bodyId = req.body.id;
+  if (noteId === bodyId) {
+    deleteNote(noteId);
+    res.json({ success: true });
+  } else {
+    res.status(400).json({ error: "Note ID mismatch" });
+  }
 });
 
 app.listen(PORT, () => {

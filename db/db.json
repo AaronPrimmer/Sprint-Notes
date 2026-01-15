@@ -1,47 +1,7 @@
 [
   {
-    "id": "task_001",
-    "title": "Set up development environment",
-    "text": "Install and configure all necessary development tools including IDE, version control, and package managers for the project."
-  },
-  {
-    "id": "task_002",
-    "title": "Design database schema",
-    "text": "Create a comprehensive database schema that includes all necessary tables, relationships, and indexes to support the application's data requirements."
-  },
-  {
-    "id": "task_003",
-    "title": "Implement user authentication",
-    "text": "Build a secure authentication system with login, registration, password reset functionality, and session management."
-  },
-  {
-    "id": "task_004",
-    "title": "Create API endpoints",
-    "text": "Develop RESTful API endpoints for all core features including CRUD operations, with proper error handling and validation."
-  },
-  {
-    "id": "task_005",
-    "title": "Build responsive UI components",
-    "text": "Design and implement reusable UI components that work seamlessly across desktop, tablet, and mobile devices."
-  },
-  {
-    "id": "task_006",
-    "title": "Write unit tests",
-    "text": "Create comprehensive unit tests for all business logic and critical functions to ensure code reliability and maintainability."
-  },
-  {
-    "id": "task_007",
-    "title": "Optimize application performance",
-    "text": "Analyze and improve application performance by implementing caching, lazy loading, and optimizing database queries."
-  },
-  {
-    "id": "task_008",
-    "title": "Deploy to production",
-    "text": "Set up production environment, configure CI/CD pipeline, and deploy the application with proper monitoring and logging."
-  },
-  {
-    "title": "Test Title",
-    "text": "Test Description",
-    "id": "u5dlqry694bmkema4kl"
+    "title": "Email Notification Service",
+    "text": "Created new microservice for handling transactional emails. Integrated with SendGrid API and added template management. Implemented queue system for bulk operations.",
+    "id": "6lgaq2sabdpmkeur7si"
   }
 ]

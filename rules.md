@@ -6,6 +6,7 @@ This project is a themed version of a classic Express.js note-taking app.
 - **Develop/** = the starter code you will complete
 
 The goal is to practice:
+
 - Express.js routing (HTML + API routes)
 - Reading/writing a JSON file with `fs`
 - Creating unique IDs for stored data
@@ -16,9 +17,9 @@ The goal is to practice:
 
 ## 📁 Folder Guide
 
-
 ### `Develop/`
-This is starter code. Some methods are intentionally left as `TODO`. 
+
+This is starter code. Some methods are intentionally left as `TODO`.
 
 For your code to be successfully deployed on Render or Netifly etc, move all code in Develop folder into the Top Level Directory of your Git repository
 
@@ -29,15 +30,18 @@ For your code to be successfully deployed on Render or Netifly etc, move all cod
 You will complete the back-end so users can write and save notes.
 
 ### HTML Routes
+
 - `GET /notes` → returns `notes.html`
 - `GET *` → returns `index.html` (fallback)
 
 ### API Routes
+
 - `GET /api/notes` → returns all saved notes
 - `POST /api/notes` → saves a new note and returns it
 - ⭐ BONUS: `DELETE /api/notes/:id` → deletes a note by id
 
 ### Data Storage
+
 - Notes are stored in `Develop/db/db.json`
 - Use `fs` (via the helper methods in `Develop/db/store.js`)
 

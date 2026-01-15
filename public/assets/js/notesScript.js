@@ -17,9 +17,9 @@ saveNoteForm.addEventListener("submit", (event) => {
   console.log("Save button pressed");
   if (titleField.value.trim() !== "" && textField.value.trim() !== "") {
     const formData = new FormData(event.target);
-    console.log("Form Data:", ...formData.entries());
+    //console.log("Form Data:", ...formData.entries());
     const data = Object.fromEntries(formData.entries());
-    console.log("Data to be sent:", data);
+    //console.log("Data to be sent:", data);
     fetch("/api/notes", {
       method: "POST",
       headers: {

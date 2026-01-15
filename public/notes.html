@@ -9,33 +9,32 @@
   <body>
     <header class="header-box">
       <h1>Sprint Notes</h1>
-      <div class="add-notes-header">
-        <button id="addNotesButton" class="add-notes-button">+ Add</button>
-      </div>
     </header>
-    <main>
+    <main class="notes-main">
       <div class="form-box">
         <form id="saveNoteForm">
-          <label for="title">Title: </label>
           <input
+            class="title-field"
             id="title"
             name="title"
             type="text"
             placeholder="Enter Title..."
           />
-          <label for="text">Description: </label>
           <input
+            class="text-field"
             id="text"
             name="text"
             type="text"
             placeholder="Enter Description..."
           />
-          <button id="cancelNoteButton" class="cancel-notes-button">
-            Cancel
-          </button>
-          <button type="submit" class="save-note-button" id="saveButton">
-            Save
-          </button>
+          <div>
+            <button id="cancelNoteButton" class="cancel-notes-button">
+              Cancel
+            </button>
+            <button type="submit" class="save-note-button" id="saveButton">
+              Save
+            </button>
+          </div>
         </form>
       </div>
     </main>
